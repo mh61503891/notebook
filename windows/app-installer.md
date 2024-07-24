@@ -10,7 +10,7 @@ Microsoft StoreからApp Installerをインストールすると、Windows Power
 
 1. Microsoft EdgeなどのWebブラウザで https://apps.microsoft.com/detail/9nblggh4nns1 にアクセスします。
 2. Installをクリックします。するとMicrosoft Storeが起動し、App Installerのページが開きます。
-3. Installをクリックします。指示に従ってインストールを完了させてください。
+3. Installをクリックします。指示に従ってインストールを完了させます。
 
 ## 動作確認
 
@@ -94,13 +94,13 @@ Documentation:
   オフライン配信をサポート: true
 ```
 
-4. `winget install` コマンドを使って、IDが `Google.Chrome` のアプリをインストールします。以下にコマンドの実行例を示します。途中で「ユーザーアカウント制御」が起動し、「このアプリがデバイスに変更を加えることを許可しますか？」と判断を仰がれます。この時、「確認済みの発行元」がGoogle LLCで有ることを確認してください。確認できれば「はい」を選択してインストールを進めます。処理が全て終わればインストールは完了指定mさう。
+4. `winget install` コマンドを使って、IDが `Google.Chrome` のアプリをインストールします。以下にコマンドの実行例を示します。途中で「ユーザーアカウント制御」が起動し、「このアプリがデバイスに変更を加えることを許可しますか？」と判断を仰がれます。この時、「確認済みの発行元」がGoogle LLCで有ることを確認してください。確認できれば「はい」を選択してインストールを進めます。処理が全て終わればインストールは完了です。
 
 ```powershell
 PS C:\Users\cat> winget install --id Google.Chrome
 ```
 
-5. もし、`winget` コマンドでインストールしたアプリをアップグレードしたい場合には、 `winget upgrade` コマンドが使えます。以下にGoogle Chromeをアップグレードする場合の例を示します。アップグレードしたいアプリのIDを指定します。
+5. もし、`winget` コマンドでインストールしたアプリをアップグレードしたい場合には、 `winget upgrade` コマンドが使えます。以下にGoogle Chromeをアップグレードする場合の例を示します。アップグレードしたいアプリのIDを指定します。なお、`winget upgrade` コマンドをオプション無しで実行すると、アップグレード可能なアプリの一覧が表示されます。
 
 ```powershell
 PS C:\Users\cat> winget upgrade --id Google.Chrome
