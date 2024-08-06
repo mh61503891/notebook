@@ -2,29 +2,17 @@
 
 ## インストール
 
+Gitのインストール方法をいくつか紹介します。
 
 === "Windows"
 
+	1. Gitの公式サイトの [https://git-scm.com/download/win](https://git-scm.com/download/win) にアクセスし、「Click here to download」をクリックしてインストーラをダウンロードします。
+
+
 	* aaa
-
-	``` c
-	#include <stdio.h>
-
-	int main(void) {
-		printf("Hello world!\n");
-		return 0;
-	}
-	```
 
 === "macOS"
 
-    ``` c++
-    #include <iostream>
-
-    int main(void) {
-      std::cout << "Hello world!" << std::endl;
-      return 0;
-    }
-    ```
+	- TODO
 
 ## セットアップ
