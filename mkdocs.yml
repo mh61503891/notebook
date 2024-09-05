@@ -1,11 +1,17 @@
 site_name: Tips
 copyright: "&copy; 2024 Masayuki Higashino"
 site_url: https://mh61503891.github.io/tips/
+repo_url: https://github.com/mh61503891/tips
+repo_name: mh61503891/tips
 plugins:
   - search
   - git-revision-date
+  - tags:
+      tags_file: tags.md
 theme:
   name: material
+  icon:
+    repo: fontawesome/brands/github-alt
   font:
       text: Noto Sans JP
       code: Inconsolata
@@ -31,3 +37,4 @@ nav:
       - unix/commands/tail.md
   - Windows:
     - windows/index.md
+  - Tags: tags.md

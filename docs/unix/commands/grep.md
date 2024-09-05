@@ -1,3 +1,10 @@
+---
+tags:
+  - grep
+  - fgrep
+  - CLI
+---
+
 # grep
 
 ## Tips
@@ -8,10 +15,10 @@
 
 実行例:
 
-```console
+```sh
 $ grep -F "192.0.2.1" file.log
 ```
 
-```console
+```sh
 $ fgrep "192.0.2.1" file.log
 ```

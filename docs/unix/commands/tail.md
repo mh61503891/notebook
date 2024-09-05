@@ -1,3 +1,9 @@
+---
+tags:
+  - tail
+  - CLI
+---
+
 # tail
 
 ## Tips

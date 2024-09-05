@@ -1,3 +1,10 @@
+---
+tags:
+  - echo
+  - CLI
+  - 制御文字
+---
+
 # echo
 
 ## Tips
@@ -8,6 +15,6 @@
 
 例:
 
-```console
+```sh
 $ echo -e "a\tb\tc"
 ```
