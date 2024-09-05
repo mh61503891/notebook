@@ -6,9 +6,15 @@ repo_name: mh61503891/notebook
 # view_uri: blob/main/docs/
 edit_uri: edit/main/docs/
 plugins:
+  - enumerate-headings:
+      toc_depth: 0
+      strict: true
+      increment_across_pages: false
+      exclude:
+        - "*"
+  - git-revision-date
   - rss
   - search
-  - git-revision-date
   - tags:
       tags_file: tags.md
 theme:
@@ -46,11 +52,22 @@ theme:
     - navigation.tabs
     - navigation.top
 markdown_extensions:
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      use_pygments: true
+      noclasses: false
+      # linenums: true
   - toc:
       permalink: true
+  - attr_list
 nav:
   - Home: index.md
   - Tips:
