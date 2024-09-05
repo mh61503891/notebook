@@ -1,7 +1,21 @@
 site_name: Tips
+copyright: "&copy; 2024 Masayuki Higashino"
 theme:
   name: material
+  font:
+      text: Noto Sans JP
+      code: Inconsolata
+  features:
+    - navigation.tabs
 markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
+nav:
+  - Home: index.md
+  - Tips:
+    - tips/index.md
+  - Unix:
+    - unix/index.md
+  - Windows:
+    - windows/index.md
