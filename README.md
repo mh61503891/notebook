@@ -5,11 +5,11 @@ https://mh61503891.github.io/tips/
 ## Development
 
 ```sh
-pip install mkdocs-material
+pip install mkdocs-material mkdocs-git-revision-date-plugin
 ```
 
 ```sh
-mkdoc serve
+mkdocs serve
 ```
 
 ## Deploy
