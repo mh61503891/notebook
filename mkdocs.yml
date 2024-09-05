@@ -6,6 +6,7 @@ repo_name: mh61503891/notebook
 # view_uri: blob/main/docs/
 edit_uri: edit/main/docs/
 plugins:
+  - rss
   - search
   - git-revision-date
   - tags:
@@ -19,15 +20,18 @@ theme:
       code: Inconsolata
   language: ja
   features:
+    - content.action.edit
+    # - content.action.view
+    - navigation.expand
+    - navigation.indexes
     - navigation.tabs
     - navigation.top
-    - navigation.expand
-    # - content.action.view
-    - content.action.edit
 markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
+  - toc:
+      permalink: true
 nav:
   - Home: index.md
   - Tips:
