@@ -1,10 +1,15 @@
 site_name: Tips
 copyright: "&copy; 2024 Masayuki Higashino"
+site_url: https://mh61503891.github.io/tips/
+plugins:
+  - search
+  - git-revision-date
 theme:
   name: material
   font:
       text: Noto Sans JP
       code: Inconsolata
+  language: ja
   features:
     - navigation.tabs
     - navigation.top
@@ -21,6 +26,7 @@ nav:
     - unix/index.md
     - Commands:
       - unix/commands/aria2.md
+      - unix/commands/echo.md
       - unix/commands/grep.md
       - unix/commands/tail.md
   - Windows:
