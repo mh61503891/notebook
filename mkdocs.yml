@@ -3,6 +3,8 @@ copyright: "&copy; 2024 Masayuki Higashino"
 site_url: https://mh61503891.github.io/tips/
 repo_url: https://github.com/mh61503891/tips
 repo_name: mh61503891/tips
+# view_uri: blob/main/docs/
+edit_uri: edit/main/docs/
 plugins:
   - search
   - git-revision-date
@@ -20,6 +22,8 @@ theme:
     - navigation.tabs
     - navigation.top
     - navigation.expand
+    # - content.action.view
+    - content.action.edit
 markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
