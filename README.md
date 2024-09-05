@@ -1,6 +1,6 @@
-# Tips
+# 61503891's Notebook
 
-https://mh61503891.github.io/tips/
+https://mh61503891.github.io/notebook/
 
 ## Development
 
