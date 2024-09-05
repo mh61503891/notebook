@@ -1,8 +1,8 @@
 site_name: Tips
 copyright: "&copy; 2024 Masayuki Higashino"
-site_url: https://mh61503891.github.io/tips/
-repo_url: https://github.com/mh61503891/tips
-repo_name: mh61503891/tips
+site_url: https://mh61503891.github.io/notebook/
+repo_url: https://github.com/mh61503891/notebook
+repo_name: mh61503891/notebook
 # view_uri: blob/main/docs/
 edit_uri: edit/main/docs/
 plugins:
