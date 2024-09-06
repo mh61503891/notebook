@@ -14,8 +14,8 @@ description: echoコマンドに関するメモです。
 
 `-e` オプション（an escape character）を指定する必要がある。
 
-例:
+実行例:
 
-```sh
-$ echo -e "a\tb\tc"
+```shell title="shell"
+echo -e "a\tb\tc"
 ```

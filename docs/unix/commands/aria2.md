@@ -17,6 +17,6 @@ description: aria2コマンドに関するメモです。
 
 実行例:
 
-```sh
-$ aria2c --max-connection-per-server=3 --continue=true https://example.net/
+```shell title="shell"
+aria2c --max-connection-per-server=3 --continue=true https://example.net/
 ```

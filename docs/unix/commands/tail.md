@@ -15,6 +15,6 @@ description: tailコマンドに関するメモです。
 
 実行例:
 
-```sh
-$ tail -f file.log
+```shell title="shell"
+tail -f file.log
 ```

@@ -17,10 +17,10 @@ description: grepコマンドに関するメモです。
 
 実行例:
 
-```sh
-$ grep -F "192.0.2.1" file.log
+```shell title="shell"
+grep -F "192.0.2.1" file.log
 ```
 
-```sh
-$ fgrep "192.0.2.1" file.log
+```shell title="shell"
+fgrep "192.0.2.1" file.log
 ```
