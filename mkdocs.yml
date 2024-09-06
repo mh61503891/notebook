@@ -15,10 +15,15 @@ plugins:
   - git-revision-date
   - rss
   - search
+  - social:
+      cards_layout_options:
+        font_family: Noto Sans SC
   - tags:
       tags_file: tags.md
 theme:
   name: material
+  logo: assets/mh61503891-512x512.png
+  favicon: assets/mh61503891-512x512.png
   icon:
     repo: fontawesome/brands/github-alt
   font:
