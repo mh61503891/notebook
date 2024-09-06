@@ -1,0 +1,5 @@
+mkdocs-material
+mkdocs-material[imaging]
+mkdocs-enumerate-headings-plugin
+mkdocs-git-revision-date-plugin
+mkdocs-rss-plugin

@@ -5,7 +5,7 @@ https://mh61503891.github.io/notebook/
 ## Development
 
 ```sh
-pip install mkdocs-material mkdocs-git-revision-date-plugin mkdocs-rss-plugin mkdocs-enumerate-headings-plugin "mkdocs-material[imaging]"
+pip install --requirement requirements.txt
 ```
 
 ```sh

@@ -2,6 +2,7 @@
 tags:
   - tail
   - CLI
+description: tailコマンドに関するメモです。
 ---
 
 # tail

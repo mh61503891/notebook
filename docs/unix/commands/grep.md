@@ -4,6 +4,7 @@ tags:
   - fgrep
   - CLI
   - 正規表現
+description: grepコマンドに関するメモです。
 ---
 
 # grep

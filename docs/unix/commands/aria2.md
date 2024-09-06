@@ -2,6 +2,7 @@
 tags:
   - aria2
   - CLI
+description: aria2コマンドに関するメモです。
 ---
 
 # aria2

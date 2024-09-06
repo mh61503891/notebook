@@ -3,6 +3,7 @@ tags:
   - echo
   - CLI
   - 制御文字
+description: echoコマンドに関するメモです。
 ---
 
 # echo
