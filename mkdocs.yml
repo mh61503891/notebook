@@ -2,6 +2,7 @@ site_name: 69503891's Notebook
 copyright: "&copy; 2024 Masayuki Higashino"
 site_url: https://mh61503891.github.io/notebook/
 repo_url: https://github.com/mh61503891/notebook
+site_description: 質問された事などをまとめています。
 repo_name: mh61503891/notebook
 view_uri: blob/main/docs/
 edit_uri: edit/main/docs/
@@ -57,6 +58,9 @@ theme:
     - navigation.tabs
     - navigation.top
 markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.details
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -73,7 +77,6 @@ markdown_extensions:
   - tables
   - toc:
       permalink: true
-  - attr_list
 nav:
   - Home: index.md
   - Tips:
