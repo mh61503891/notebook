@@ -3,6 +3,7 @@ tags:
   - grep
   - fgrep
   - CLI
+  - 正規表現
 ---
 
 # grep
