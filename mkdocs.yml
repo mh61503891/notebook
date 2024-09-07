@@ -63,7 +63,6 @@ theme:
     - navigation.indexes
     - navigation.tabs
     - navigation.top
-  custom_dir: overrides
 extra:
   social:
     - icon: fontawesome/brands/github
