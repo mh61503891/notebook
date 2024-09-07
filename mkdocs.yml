@@ -63,6 +63,7 @@ theme:
     - navigation.indexes
     - navigation.tabs
     - navigation.top
+  custom_dir: overrides
 extra:
   social:
     - icon: fontawesome/brands/github
@@ -105,3 +106,4 @@ nav:
   - Windows:
     - windows/index.md
   - Tags: tags.md
+  - Search: search.md
