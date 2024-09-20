@@ -95,6 +95,8 @@ nav:
   - Home: index.md
   - Tips:
     - tips/index.md
+    - LaTeX:
+      - tips/latex/bibtex.md
   - Unix:
     - unix/index.md
     - Commands:
