@@ -33,9 +33,11 @@ tags:
 文献~\cite{Sample1,Sample2}では，〜が提案されている．
 ```
 
-## Fields
+## 参考文献リスト
 
-### author (著者)
+### Fields (フィールド)
+
+#### author (著者)
 
 - 複数の著者名は `and` で繋ぐこと。複数の著者名を `, ` で繋ぐのは誤りなので注意する。
 - 著者名はカンマを使って「名, 姓」の順番で書くこともできる。
@@ -43,7 +45,7 @@ tags:
 - 著者名が組織名の場合は `{` `}` で囲むことでセンテンスケース（Sentence case）への変換を抑制できる。
 - 著者名を間違うと大変失礼なので絶対に間違わないこと。
 
-#### 著者の記述例
+##### 著者の記述例
 
 ```
 author = {著者 太郎 and 著者 花子},
@@ -73,7 +75,7 @@ author = {Chosya, T. and Chosya, H.},
 author = {{Company LLC}},
 ```
 
-#### 著者の一部省略
+##### 著者の一部省略
 
 原則として著者は全てフルスペルで書き出す。ただし、特定の条件では、著者数が多い場合に、全ての著者を記述せずに後半の著者を省略しても良い場合がある。例えば[情報処理学会の場合は、4名以上の場合に省略可能](https://www.ipsj.or.jp/journal/submit/ronbun_j_prms.html)としている。繰り返しになるが、原則として著者は全てフルスペルで書き出すこと。原稿のページ数に制限がある場合で、ページ制限内に収まらない場合に限って省略するようにすると良い。
 
@@ -83,9 +85,9 @@ BibTeXでは次のように `others` を使うことで残りの著者を省略�
 author = {Taro Tottori and Hanako Kuratyosi and Torimi Yonago and others},
 ```
 
-## 記述例
+### 記述例
 
-### 学術雑誌論文
+#### 学術雑誌論文
 
 - DOIは積極的に記載する。
 - DOIが無い場合、 `url` を記載することもできる。
@@ -105,7 +107,7 @@ author = {Taro Tottori and Hanako Kuratyosi and Torimi Yonago and others},
     }
     ```
 
-### 国際会議論文
+#### 国際会議論文
 
 === "IPSJ"
 
@@ -123,7 +125,7 @@ author = {Taro Tottori and Hanako Kuratyosi and Torimi Yonago and others},
     }
     ```
 
-### ウェブページ
+#### ウェブページ
 
 - ウェブページは内容が変更される場合があるので、参照した年月日を記載する。
 - 論文執筆時のウェブページの内容が失われないように、PDF形式やMHTML形式でハードコピーを保存しておく。
@@ -140,7 +142,7 @@ author = {Taro Tottori and Hanako Kuratyosi and Torimi Yonago and others},
    }
    ```
 
-## フォーマッタの利用
+### フォーマッタの利用
 
 `.bib` ファイルを自動整形するには、[bibtex-tidy](https://github.com/FlamingTempura/bibtex-tidy) が非常に便利である。
 
