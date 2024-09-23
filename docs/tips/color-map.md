@@ -96,6 +96,8 @@ References: [Color Universal Design (CUD) / Colorblind Barrier Free](https://jfl
 		- これまで「彷徨変異」と呼称していた概念を「多様性（バリエーション、variation）」と改定した。
 	- CUDOも色覚多様性という呼称を使用している。
 		- [色覚多様性とは – NPO法人 カラーユニバーサルデザイン機構 CUDO](https://cudo.jp/?page_id=76)
+	- [Q] 医学用語としてはどうか？
+		- 調査中
 - その他
 	- [Martin Krzywinski - Color Resources and Tools - Canada's Michael Smith Genome Sciences Centre](https://mk.bcgsc.ca/color/#projecthome)
 	- [Color blind friendly palettes for data visualizations with categories](https://thenode.biologists.com/data-visualization-with-flying-colors/research/)
