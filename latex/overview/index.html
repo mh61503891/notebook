@@ -53,6 +53,8 @@
       
     
     
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -676,6 +678,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      余談
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1112,6 +1123,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      余談
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1201,7 +1221,7 @@
 <h3 id="latex_1">LaTeX<a class="headerlink" href="#latex_1" title="Permanent link">&para;</a></h3>
 <ul>
 <li><span class="arithmatex">\(\LaTeX\)</span>は<span class="arithmatex">\(\TeX\)</span>の強化版です。オリジナルはレスリー・ランポート（Leslie B. Lamport）氏<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>によって開発されました。</li>
-<li>英語圏では「レイテック」、日本語圏では「ラテフ」等と読むことが多いようです。</li>
+<li>英語圏では「レイテック」、日本語圏では「ラテフ」や「ラテック」等と読むことが多いようです。LaTeXの入門書として有名な「LaTeX美文書作成入門」では「ラテック」で書名の読み仮名が登録されているようです<sup id="fnref2:5"><a class="footnote-ref" href="#fn:5">5</a></sup>。</li>
 <li><span class="arithmatex">\(\LaTeX\)</span>のようにAとEを字下できない場合はLaTeXと書きます。</li>
 </ul>
 <h2 id="latex_2">LaTeXの特徴<a class="headerlink" href="#latex_2" title="Permanent link">&para;</a></h2>
@@ -1227,6 +1247,21 @@
 </ul>
 </li>
 </ul>
+<h2 id="_1">余談<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<div class="admonition coffee">
+<p class="admonition-title">新しい組版システムの登場</p>
+<p>2023年にTeXとは異なる組版システムとして<a href="https://github.com/typst/typst">Typst</a>が公開されました。公式サイトによると、TypstはLaTeXと同じくらい強力ではるかに簡単に学習および使用できるように設計されているそうです。</p>
+<p>論文の投稿者の立場からすると、実務的には投稿先の学会がTypstに対応したフォーマットを提供または受付しているかどうかが問題です。また、主著者だけでなく共著者もTypstに十分習熟している必要があります。また、大学で使うには学生への教育環境もある程度は必要です。</p>
+<p>学会の立場からすると、Typstに対応した論文管理システムを用意できるかどうか、Typstのノウハウを持った校正担当者が居るかどうか、論文に関するメタ情報（題目、著者、概要、キーワード、投稿日、受理日、出版日、参考文献の参照、被参照情報）を機械可読性のある形式で抽出できるか、LaTeXとWordに加えてTypstの選択肢を増やすことで管理上のコストが純増することなど、考慮しなければならないことが沢山ありそうです。</p>
+<p>一方で、LaTeXも改善が続けられています。（しかし、インストールとコンパイルが遅いことは否め無いと思います。）</p>
+<p>いずれにしても、選択肢が増えることは良いことではないでしょうか。</p>
+</div>
+<div class="admonition coffee">
+<p class="admonition-title">TeXが登場する漫画</p>
+<ul>
+<li>絹田 村子、数字であそぼ。、10巻、小学館、2023、<a href="https://www.hanmoto.com/bd/isbn/9784098722136">978-4-09-872213-6</a></li>
+</ul>
+</div>
 <div class="footnote">
 <hr />
 <ol>
@@ -1243,7 +1278,7 @@
 <p><a href="https://www.tug.org/texlive/">TeX Live - TeX Users Group</a>&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
 </li>
 <li id="fn:5">
-<p>奥村晴彦、黒木裕介：LaTeX美文書作成入門、改訂第9版、技術評論社、p.6、2023、<a href="https://www.hanmoto.com/bd/isbn/9784297138899">978-4-297-13889-9</a>&#160;<a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+<p>奥村晴彦、黒木裕介：LaTeX美文書作成入門、改訂第9版、技術評論社、p.6、2023、<a href="https://www.hanmoto.com/bd/isbn/9784297138899">978-4-297-13889-9</a>&#160;<a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:5" title="Jump back to footnote 5 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>
@@ -1269,7 +1304,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-custom">2024-09-23 09:52</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-custom">2024-09-23 11:41</span>
   </span>
 
     
