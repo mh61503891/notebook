@@ -1,0 +1,55 @@
+---
+tags:
+  - TeX
+  - LaTeX
+  - BibTeX
+  - TeX Live
+  - 組版システム
+  - レガシーなLaTeX
+  - モダンなLaTeX
+---
+
+# LaTeXの概要
+
+## TeXとLaTeX
+
+### TeX
+
+- $\TeX$は組版システム（typesetting system）です[^1]。 ドナルド・クヌース（Donald Ervin Knuth）氏[^2]によって開発されました。
+- 英語圏では「テック」、日本語圏では「テフ」等と読むことが多いようです。
+- $\TeX$のようにEを字下げできない場合はTeXと書きます。
+
+[^1]: [TeX Users Group (TUG)](https://tug.org/)
+[^2]: [Donald Knuth - Wikipedia](https://en.wikipedia.org/wiki/Donald_Knuth)
+
+### LaTeX
+
+- $\LaTeX$は$\TeX$の強化版です。オリジナルはレスリー・ランポート（Leslie B. Lamport）氏[^3]によって開発されました。
+- 英語圏では「レイテック」、日本語圏では「ラテフ」等と読むことが多いようです。
+- $\LaTeX$のようにAとEを字下できない場合はLaTeXと書きます。
+
+[^3]: [Leslie Lamport - Wikipedia](https://en.wikipedia.org/wiki/Leslie_Lamport)
+
+## LaTeXの特徴
+
+- 文書の論理構造と文書の体裁を分離できることにあります。
+
+## LaTeXのテンプレート
+
+- 多くの電気情報系の学会で、LaTeXのテンプレートが提供されています。
+    - 私が良く参照する論文の学会では、情報処理学会、電子情報通信学会、日本ソフトウェア科学会、IEEE、ACM等が挙げられます。
+- 学会へ論文を投稿する際には、学会で定められた様式で論文を作成する必要があります。学会で提供されているLaTeXのテンプレートを用いることで、論文の執筆者は論文の内容に注力することができます。論文の体裁はLaTeXのテンプレートに任せることができます。
+
+## LaTeXの処理系
+
+- 日本語文書を処理する場合、`platex`、`pbibtex`、`dvipdfmx` 等のコマンド群をインストールする必要があります。
+- 英語文書を処理する場合、`pdflatex`、`bibtex` 等のコマンド群をインストールする必要があります。
+- これらのコマンド群は個別にインストールするのではなく、通常はTeX Live[^4]を用いてまとめてインストールします。
+- レガシーなLaTeXとモダンなLaTeX
+    - `platex` はレガシーなLaTeXとよばれることがあります[^5]。一方、モダンなLaTeXとしては、LuaLaTeXなどが挙げられます。
+    - 情報処理学会のLaTeXのテンプレートを使用するには、現状としてレガシーLaTeXを使用する必要があります。このため、実務的な観点から本ウェブサイトではレガシーLaTeXについて記載します。
+
+[^4]: [TeX Live - TeX Users Group](https://www.tug.org/texlive/)
+[^5]: 奥村晴彦、黒木裕介：LaTeX美文書作成入門、改訂第9版、技術評論社、p.6、2023、[978-4-297-13889-9](https://www.hanmoto.com/bd/isbn/9784297138899)
+
+

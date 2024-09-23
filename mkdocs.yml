@@ -26,6 +26,14 @@ plugins:
         font_family: Noto Sans JP
   - tags:
       tags_file: tags.md
+  # - mkdocs-breadcrumbs-plugin:
+  #       delimiter: " / "
+  #       log_level: "WARNING"
+        # exclude_paths:
+        #   - "docs/mkdocs/*"
+        #   - "docs/mkdocs"
+        #   - "docs/mkdocs/**"
+        # generate_home_index: true
 theme:
   name: material
   logo: assets/mh61503891-512x512.png
@@ -73,6 +81,9 @@ extra:
 markdown_extensions:
   - admonition
   - attr_list
+  - footnotes
+  - pymdownx.arithmatex:
+      generic: true
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -94,16 +105,20 @@ markdown_extensions:
   - tables
   - toc:
       permalink: true
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 nav:
   - Home: index.md
   - Tips:
     - tips/index.md
   - LaTeX:
       - latex/index.md
+      - latex/overview.md
+      - latex/processing.md
       - latex/setup.md
       - latex/bibtex.md
   - Unix:
-    - unix/index.md
     - Commands:
       - unix/commands/aria2.md
       - unix/commands/echo.md

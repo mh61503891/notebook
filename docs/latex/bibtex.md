@@ -3,6 +3,7 @@ tags:
   - BibTeX
   - bibtex-tidy
   - IPSJ
+  - Draft
 ---
 
 # BibTeX
