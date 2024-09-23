@@ -7,7 +7,11 @@ tags:
 
 Under Construction.
 
+日本語文書を処理する場合の例
+
 ## pLaTeX + pBibTeX + dvipdfmx
+
+`platex` コマンドは次のように複数回実行する必要がある。
 
 ```shell-session
 $ platex main
@@ -17,9 +21,26 @@ $ platex main
 $ dvipdfmx main
 ```
 
-```shell-session
-$ latexmk
+`latexmk` を使えば複数のコマンドの実行を自動化できる。
+
+次のように `latexmkrc` ファイルを用意しておく。
+
+```.pl title="latexmkrc"
+$latex = 'platex';
+$bibtex = 'pbibtex';
+$dvipdf = 'dvipdfmx %O -o %D %S';
+$makeindex = 'mendex %O -o %D %S';
+$pdf_mode = 3;
 ```
+
+次のように `latexmk` コマンドを実行する。
+
+```shell-session
+$ latexmk -f main
+```
+
+各コマンドと入出力ファイルの関係は次のとおり。
+
 
 ```mermaid
 graph LR
@@ -73,5 +94,7 @@ graph LR
 
 ## pdfTeX + BibTeX
 
-Under Construction.
+英語文書を処理する場合の例
+
+
 
