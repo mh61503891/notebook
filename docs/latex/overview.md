@@ -17,7 +17,7 @@ tags:
 
 - $\TeX$は組版システム（typesetting system）です[^1]。 ドナルド・クヌース（Donald Ervin Knuth）氏[^2]によって開発されました。
 - 英語圏では「テック」、日本語圏では「テフ」等と読むことが多いようです。
-- $\TeX$のようにEを字下げできない場合はTeXと書きます。
+- $\TeX$のようにEを下付き文字にできない場合はTeXと書きます。
 
 [^1]: [TeX Users Group (TUG)](https://tug.org/)
 [^2]: [Donald Knuth - Wikipedia](https://en.wikipedia.org/wiki/Donald_Knuth)
@@ -26,7 +26,7 @@ tags:
 
 - $\LaTeX$は$\TeX$の強化版です。オリジナルはレスリー・ランポート（Leslie B. Lamport）氏[^3]によって開発されました。
 - 英語圏では「レイテック」、日本語圏では「ラテフ」や「ラテック」等と読むことが多いようです。LaTeXの入門書として有名な「LaTeX美文書作成入門」では「ラテック」で書名の読み仮名が登録されているようです[^5]。
-- $\LaTeX$のようにAとEを字下できない場合はLaTeXと書きます。
+- $\LaTeX$のようにAを上付き文字にしたりEを下付き文字にしたりできない場合はLaTeXと書きます。
 
 [^3]: [Leslie Lamport - Wikipedia](https://en.wikipedia.org/wiki/Leslie_Lamport)
 
