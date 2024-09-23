@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://mh61503891.github.io/notebook/latex/setup/">
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../processing/">
       
       
         <link rel="next" href="../bibtex/">
@@ -23,15 +23,15 @@
         <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../feed_rss_updated.xml">
       
       <link rel="icon" href="../../assets/mh61503891-512x512.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.35">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.36">
     
     
       
-        <title>セットアップ - 69503891's Notebook</title>
+        <title>LaTeXのセットアップ - 69503891's Notebook</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.35f28582.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.06209087.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -62,7 +62,7 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="セットアップ - 69503891's Notebook" >
+        <meta  property="og:title"  content="LaTeXのセットアップ - 69503891's Notebook" >
       
         <meta  property="og:description"  content="質問された事などをまとめています。" >
       
@@ -78,7 +78,7 @@
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="セットアップ - 69503891's Notebook" >
+        <meta  name="twitter:title"  content="LaTeXのセットアップ - 69503891's Notebook" >
       
         <meta  name="twitter:description"  content="質問された事などをまとめています。" >
       
@@ -105,7 +105,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#latex" class="md-skip">
           Skip to content
         </a>
       
@@ -138,7 +138,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              セットアップ
+              LaTeXのセットアップ
             
           </span>
         </div>
@@ -315,8 +315,14 @@
   
     
     
+      
+  
+  
+  
+    
+    
       <li class="md-tabs__item">
-        <a href="../../unix/" class="md-tabs__link">
+        <a href="../../unix/commands/aria2/" class="md-tabs__link">
           
   
     
@@ -325,6 +331,9 @@
 
         </a>
       </li>
+    
+  
+
     
   
 
@@ -507,6 +516,10 @@
       
         
       
+        
+      
+        
+      
     
     
       
@@ -555,6 +568,48 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LaTeXの概要
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../processing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LaTeXの処理系
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -571,7 +626,7 @@
           
   
   <span class="md-ellipsis">
-    セットアップ
+    LaTeXのセットアップ
   </span>
   
 
@@ -582,7 +637,7 @@
         
   
   <span class="md-ellipsis">
-    セットアップ
+    LaTeXのセットアップ
   </span>
   
 
@@ -604,7 +659,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       インストール
     </span>
@@ -613,7 +668,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       動作確認
     </span>
@@ -668,10 +723,6 @@
     
       
         
-          
-        
-      
-        
       
     
     
@@ -688,24 +739,16 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
         
           
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../../unix/" class="md-nav__link ">
-              
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     Unix
   </span>
   
 
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
+            <span class="md-nav__icon md-icon"></span>
+          </label>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
@@ -713,8 +756,6 @@
             Unix
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
             
               
                 
@@ -745,10 +786,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_1" >
         
           
-          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -759,8 +800,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_2">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
             <span class="md-nav__icon md-icon"></span>
             Commands
           </label>
@@ -970,7 +1011,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       インストール
     </span>
@@ -979,7 +1020,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       動作確認
     </span>
@@ -1000,6 +1041,17 @@
               <article class="md-content__inner md-typeset">
                 
                   
+  
+<nav class="md-tags" >
+  
+    
+    
+    
+      <a href="../../tags/#draft" class="md-tag">Draft</a>
+    
+  
+</nav>
+
 
   
     <a href="https://github.com/mh61503891/notebook/edit/main/docs/latex/setup.md" title="Edit this page" class="md-content__button md-icon">
@@ -1018,8 +1070,8 @@
   
 
 
-<h1 id="_1">セットアップ<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<h2 id="_2">インストール<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h1 id="latex">LaTeXのセットアップ<a class="headerlink" href="#latex" title="Permanent link">&para;</a></h1>
+<h2 id="_1">インストール<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">macOS <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"/></svg></span></label><label for="__tabbed_1_2">Windows <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 12V6.75l6-1.32v6.48zm17-9v8.75l-10 .15V5.21zM3 13l6 .09v6.81l-6-1.15zm17 .25V22l-10-1.91V13.1z"/></svg></span></label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1033,7 +1085,7 @@
 </div>
 </div>
 </div>
-<h2 id="_3">動作確認<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h2 id="_2">動作確認<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <ul>
 <li>日本語文書を扱う場合は次の3つのコマンドが動作することを確認する。<ul>
 <li><code>platex</code></li>
@@ -1113,7 +1165,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-custom">2024-09-20 18:50</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-custom">2024-09-23 09:52</span>
   </span>
 
     
@@ -1204,6 +1256,10 @@
     
     
       <script src="../../assets/javascripts/bundle.56dfad97.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

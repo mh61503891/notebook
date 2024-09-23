@@ -16,14 +16,14 @@
         <link rel="prev" href="../tips/">
       
       
-        <link rel="next" href="setup/">
+        <link rel="next" href="overview/">
       
       
         <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../feed_rss_created.xml">
         <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../feed_rss_updated.xml">
       
       <link rel="icon" href="../assets/mh61503891-512x512.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.35">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.36">
     
     
       
@@ -31,7 +31,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.35f28582.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.06209087.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
@@ -315,8 +315,14 @@
   
     
     
+      
+  
+  
+  
+    
+    
       <li class="md-tabs__item">
-        <a href="../unix/" class="md-tabs__link">
+        <a href="../unix/commands/aria2/" class="md-tabs__link">
           
   
     
@@ -325,6 +331,9 @@
 
         </a>
       </li>
+    
+  
+
     
   
 
@@ -507,6 +516,10 @@
       
         
       
+        
+      
+        
+      
     
     
       
@@ -558,11 +571,53 @@
   
   
     <li class="md-nav__item">
+      <a href="overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LaTeXの概要
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="processing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LaTeXの処理系
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="setup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    セットアップ
+    LaTeXのセットアップ
   </span>
   
 
@@ -610,10 +665,6 @@
     
       
         
-          
-        
-      
-        
       
     
     
@@ -630,24 +681,16 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
         
           
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../unix/" class="md-nav__link ">
-              
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     Unix
   </span>
   
 
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
+            <span class="md-nav__icon md-icon"></span>
+          </label>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
@@ -655,8 +698,6 @@
             Unix
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
             
               
                 
@@ -687,10 +728,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_1" >
         
           
-          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -701,8 +742,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_2">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
             <span class="md-nav__icon md-icon"></span>
             Commands
           </label>
@@ -905,32 +946,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#platex-pbibtex-dvipdfmx" class="md-nav__link">
-    <span class="md-ellipsis">
-      pLaTeX + pBibTeX + dvipdfmx
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pdftex-bibtex" class="md-nav__link">
-    <span class="md-ellipsis">
-      pdfTeX + BibTeX
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -961,76 +976,6 @@
 
 
 <h1 id="latex">LaTeX<a class="headerlink" href="#latex" title="Permanent link">&para;</a></h1>
-<h2 id="platex-pbibtex-dvipdfmx">pLaTeX + pBibTeX + dvipdfmx<a class="headerlink" href="#platex-pbibtex-dvipdfmx" title="Permanent link">&para;</a></h2>
-<p>Under Construction.</p>
-<div class="language-shell-session highlight"><pre><span></span><code><span class="gp">$ </span>platex<span class="w"> </span>main
-<span class="gp">$ </span>pbibtex<span class="w"> </span>main
-<span class="gp">$ </span>platex<span class="w"> </span>main
-<span class="gp">$ </span>platex<span class="w"> </span>main
-<span class="gp">$ </span>dvipdfmx<span class="w"> </span>main
-</code></pre></div>
-<div class="language-shell-session highlight"><pre><span></span><code><span class="gp">$ </span>latexmk
-</code></pre></div>
-<pre class="mermaid"><code>graph LR
-  TEX --&gt; PLATEX
-  STY --&gt; PLATEX
-  BBL --&gt; PLATEX
-  PLATEX --&gt; AUX
-  PLATEX --&gt; DVI
-  PLATEX --&gt; LOG
-  AUX --&gt; PBIBTEX
-  BIB --&gt; PBIBTEX
-  BST --&gt; PBIBTEX
-  PBIBTEX --&gt; BBL
-  PBIBTEX --&gt; BLG
-  DVI --&gt; DVIPDFMX
-  DVIPDFMX --&gt; PDF
-  TEX[.tex]:::src
-  BIB[.bib]:::src
-  STY[.sty]:::fmt
-  AUX[.aux]:::tmp
-  DVI[.dvi]:::tmp
-  LOG[.log]
-  BLG[.blg]
-  BST[.bst]:::fmt
-  BBL[.bbl]:::tmp
-  PDF[.pdf]:::dst
-  PLATEX([platex])
-  PBIBTEX([pbibtex])
-  DVIPDFMX([dvipdfmx])
-  classDef src stroke-width:4px
-  classDef dst stroke-width:4px, stroke:#0f0
-  classDef tmp stroke-width:1px, stroke-dasharray: 5 5
-  classDef fmt stroke-width:4px, stroke:#f96</code></pre>
-<ul>
-<li>source files<ul>
-<li><code>.tex</code></li>
-<li><code>.bib</code></li>
-</ul>
-</li>
-<li>template files<ul>
-<li><code>.sty</code></li>
-<li><code>.bst</code></li>
-</ul>
-</li>
-<li>log files<ul>
-<li><code>.log</code></li>
-<li><code>.blg</code></li>
-</ul>
-</li>
-<li>temporary files<ul>
-<li><code>.aux</code></li>
-<li><code>.bbl</code></li>
-</ul>
-</li>
-<li>final output files<ul>
-<li>(<code>.dvi</code>)</li>
-<li><code>.pdf</code></li>
-</ul>
-</li>
-</ul>
-<h2 id="pdftex-bibtex">pdfTeX + BibTeX<a class="headerlink" href="#pdftex-bibtex" title="Permanent link">&para;</a></h2>
-<p>Under Construction.</p>
 
 
 
@@ -1053,7 +998,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-custom">2024-09-20 18:50</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-custom">2024-09-23 09:52</span>
   </span>
 
     
@@ -1144,6 +1089,10 @@
     
     
       <script src="../assets/javascripts/bundle.56dfad97.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>
