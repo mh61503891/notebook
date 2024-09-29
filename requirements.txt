@@ -2,6 +2,7 @@ mkdocs-breadcrumbs-plugin
 mkdocs-enumerate-headings-plugin
 mkdocs-git-committers-plugin-2
 mkdocs-git-revision-date-localized-plugin
+mkdocs-glightbox
 mkdocs-rss-plugin
 mkdocs-material
 mkdocs-material[imaging]

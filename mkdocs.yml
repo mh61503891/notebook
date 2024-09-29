@@ -39,6 +39,7 @@ plugins:
       enable_creation_date: true
       type: custom
       custom_format: "%Y-%m-%d %H:%M"
+  - glightbox
   - rss
   - search
   - social:

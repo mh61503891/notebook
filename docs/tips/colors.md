@@ -149,6 +149,11 @@ plt.savefig(
 		- [色覚多様性とは – NPO法人 カラーユニバーサルデザイン機構 CUDO](https://cudo.jp/?page_id=76)
 	- 医学用語としてはどうか？
 		- 調査中
-- その他
-	- [Martin Krzywinski - Color Resources and Tools - Canada's Michael Smith Genome Sciences Centre](https://mk.bcgsc.ca/color/#projecthome)
-	- [Color blind friendly palettes for data visualizations with categories](https://thenode.biologists.com/data-visualization-with-flying-colors/research/)
+
+## その他のリンク
+
+- [Martin Krzywinski - Color Resources and Tools - Canada's Michael Smith Genome Sciences Centre](https://mk.bcgsc.ca/color/#projecthome)
+- [Color blind friendly palettes for data visualizations with categories](https://thenode.biologists.com/data-visualization-with-flying-colors/research/)
+- [Choosing color palettes — seaborn documentation](https://seaborn.pydata.org/tutorial/color_palettes.html)
+- [Introduction to the viridis color maps](https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html)
+- [Creating a colormap from a list of colors — Matplotlib documentation](https://matplotlib.org/stable/gallery/color/custom_cmap.html)
