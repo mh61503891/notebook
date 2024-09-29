@@ -1,13 +1,9 @@
 ---
 tags:
-  - Draft
+  - LaTeX
 ---
 
 # LaTeXの処理系
-
-Under Construction.
-
-日本語文書を処理する場合の例
 
 ## pLaTeX + pBibTeX + dvipdfmx
 
@@ -23,7 +19,7 @@ $ dvipdfmx main
 
 `latexmk` を使えば複数のコマンドの実行を自動化できる。
 
-次のように `latexmkrc` ファイルを用意しておく。
+次のように `latexmkrc` ファイルを作業ディレクトリに用意しておく。
 
 ```.pl title="latexmkrc"
 $latex = 'platex';
@@ -94,7 +90,4 @@ graph LR
 
 ## pdfTeX + BibTeX
 
-英語文書を処理する場合の例
-
-
-
+英語文書を処理する場合はpdfTeXを使うことが多いようだ。

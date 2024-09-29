@@ -23,10 +23,11 @@ tags:
 
 ## 動作確認
 
-- 日本語文書を扱う場合は次の3つのコマンドが動作することを確認する。
-	- `platex`
-	- `pbibtex`
-	- `dvipdfmx`
+日本語文書を扱う場合で、かつpLaTeXを用いる場合は、次の3つのコマンドが動作することを確認する。
+
+- `platex`
+- `pbibtex`
+- `dvipdfmx`
 
 === "macOS :material-apple:"
 
