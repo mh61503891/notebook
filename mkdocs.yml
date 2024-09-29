@@ -1,10 +1,30 @@
 site_name: 69503891's Notebook
 copyright: "&copy; 2024 Masayuki Higashino"
+site_description: 備忘録です。
 site_url: https://mh61503891.github.io/notebook/
-repo_url: https://github.com/mh61503891/notebook
-site_description: 質問された事などをまとめています。
+repo_url: https://github.com/mh61503891/notebook/
 repo_name: mh61503891/notebook
 edit_uri: edit/main/docs/
+nav:
+  - Home: index.md
+  - LaTeX:
+      - latex/index.md
+      - latex/overview.md
+      - latex/processing.md
+      - latex/setup.md
+      - latex/bibtex.md
+  - Unix:
+    - Commands:
+      - unix/commands/aria2.md
+      - unix/commands/echo.md
+      - unix/commands/grep.md
+      - unix/commands/tail.md
+  - Windows:
+    - windows/index.md
+  - Tips:
+    - tips/index.md
+    - tips/colors.md
+  - Tags: tags.md
 plugins:
   - enumerate-headings:
       toc_depth: 0
@@ -79,15 +99,18 @@ extra:
       link: https://x.com/61503891
   generator: false
 markdown_extensions:
+  - abbr
   - admonition
   - attr_list
   - footnotes
+  - md_in_html
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.details
+  - pymdownx.snippets
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -112,23 +135,3 @@ extra_javascript:
   - javascripts/tablesort.js
 extra_css:
   - stylesheets/extra.css
-nav:
-  - Home: index.md
-  - Tips:
-    - tips/index.md
-    - tips/color-map.md
-  - LaTeX:
-      - latex/index.md
-      - latex/overview.md
-      - latex/processing.md
-      - latex/setup.md
-      - latex/bibtex.md
-  - Unix:
-    - Commands:
-      - unix/commands/aria2.md
-      - unix/commands/echo.md
-      - unix/commands/grep.md
-      - unix/commands/tail.md
-  - Windows:
-    - windows/index.md
-  - Tags: tags.md
