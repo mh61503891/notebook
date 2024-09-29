@@ -1,3 +1,21 @@
+---
+tags:
+  - viridis Color Map
+  - Okabe-Ito Color Palette
+  - CVD
+  - Color Vision Deficiency
+  - Color Blindness
+  - CUD
+  - Color Universal Design
+  - CUDO
+  - Color Universal Design Organization
+  - 色覚多様性
+  - Color Vision Variation
+
+
+
+
+---
 # 配色
 
 ## viridisカラーマップ
