@@ -25,6 +25,7 @@ nav:
     - tips/index.md
     - tips/colors.md
     - tips/matplotlib.md
+    - tips/qr-code.md
   - Tags: tags.md
 plugins:
   - enumerate-headings:
