@@ -24,6 +24,7 @@ nav:
   - Tips:
     - tips/index.md
     - tips/colors.md
+    - tips/matplotlib.md
   - Tags: tags.md
 plugins:
   - enumerate-headings:

@@ -11,10 +11,6 @@ tags:
   - Color Universal Design Organization
   - 色覚多様性
   - Color Vision Variation
-
-
-
-
 ---
 # 配色
 
