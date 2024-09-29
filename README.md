@@ -9,7 +9,7 @@ pip install --requirement requirements.txt
 ```
 
 ```sh
-mkdocs serve
+mkdocs serve --watch-theme
 ```
 
 ## Deploy
