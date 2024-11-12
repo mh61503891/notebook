@@ -23,7 +23,7 @@
         <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../feed_rss_updated.xml">
       
       <link rel="icon" href="../../assets/mh61503891-512x512.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.39">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
     
     
       
@@ -31,7 +31,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.8c3ca2c6.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.35f28582.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -700,6 +700,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#bibtex_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      BibTeX スタイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       記述例
@@ -1268,6 +1277,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#bibtex_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      BibTeX スタイル
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       記述例
@@ -1389,10 +1407,12 @@
 <li><code>~</code> （チルダ）を <code>\cite{}</code> の前に書くことで参照記号の直前で改行されてしまうことを防ぐ。</li>
 <li>文に対して参考文献を示す場合、句点の後ではなく句点の前に参照記号を書くことに注意する。</li>
 </ul>
-<p>1つの文献を参照する場合:</p>
+<p>1 つの文献を参照する場合:</p>
 <div class="language-tex highlight"><pre><span></span><code>これは参考文献を参照する場合の記述例である~<span class="k">\cite</span><span class="nb">{</span>Sample<span class="nb">}</span>．
-</code></pre></div>
-<div class="language-tex highlight"><pre><span></span><code>文献~<span class="k">\cite</span><span class="nb">{</span>Sample<span class="nb">}</span>では，〜が提案されている．
+d```
+
+```tex
+文献~<span class="k">\cite</span><span class="nb">{</span>Sample<span class="nb">}</span>では，〜が提案されている．
 </code></pre></div>
 <p>複数の文献を参照する場合:</p>
 <div class="language-tex highlight"><pre><span></span><code>これは参考文献を参照する場合の記述例である~<span class="k">\cite</span><span class="nb">{</span>Sample1,Sample2<span class="nb">}</span>．
@@ -1403,39 +1423,46 @@
 <h3 id="fields">Fields (フィールド)<a class="headerlink" href="#fields" title="Permanent link">&para;</a></h3>
 <h4 id="author">author (著者)<a class="headerlink" href="#author" title="Permanent link">&para;</a></h4>
 <ul>
-<li>複数の著者名は <code>and</code> で繋ぐこと。複数の著者名を <code>,</code> で繋ぐのは誤りなので注意する。</li>
+<li>複数の著者名は <code>and</code> で繋ぐこと。複数の著者名を <code>,</code> で繋ぐのは誤りなので注意する。<code>,</code> は姓名などの区切りに使用される。</li>
 <li>著者名はカンマを使って「名, 姓」の順番で書くこともできる。</li>
 <li>英語の場合はイニシャルが用いられる場合もあるが推奨しない。フルネームで書く方が良い。</li>
 <li>著者名が組織名の場合は <code>{</code> <code>}</code> で囲むことでセンテンスケース（Sentence case）への変換を抑制できる。</li>
-<li>著者名を間違うと大変失礼なので絶対に間違わないこと。</li>
+<li>著者名を間違うと大変失礼でもあるので絶対に間違わないこと。</li>
 </ul>
 <h5 id="_3">著者の記述例<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h5>
-<div class="language-text highlight"><pre><span></span><code>author = {著者 太郎 and 著者 花子},
+<div class="language-bibtex highlight"><pre><span></span><code><span class="c">author = {著者 太郎 and 著者 花子},</span>
 </code></pre></div>
-<div class="language-text highlight"><pre><span></span><code>author = {太郎, 著者 and 花子, 著者},
+<div class="language-bibtex highlight"><pre><span></span><code><span class="c">author = {太郎, 著者 and 花子, 著者},</span>
 </code></pre></div>
-<div class="language-text highlight"><pre><span></span><code>author = {Taro Chosya and Hanako Chosya},
+<div class="language-bibtex highlight"><pre><span></span><code><span class="c">author = {Taro Chosya and Hanako Chosya},</span>
 </code></pre></div>
-<div class="language-text highlight"><pre><span></span><code>author = {Chosya, Taro and Chosya, Hanako},
+<div class="language-bibtex highlight"><pre><span></span><code><span class="c">author = {Chosya, Taro and Chosya, Hanako},</span>
 </code></pre></div>
-<div class="language-text highlight"><pre><span></span><code>author = {T. Chosya and H. Chosya},
+<div class="language-bibtex highlight"><pre><span></span><code><span class="c">author = {T. Chosya and H. Chosya},</span>
 </code></pre></div>
-<div class="language-text highlight"><pre><span></span><code>author = {Chosya, T. and Chosya, H.},
+<div class="language-bibtex highlight"><pre><span></span><code><span class="c">author = {Chosya, T. and Chosya, H.},</span>
 </code></pre></div>
-<div class="language-text highlight"><pre><span></span><code>author = {{Company LLC}},
+<div class="language-bibtex highlight"><pre><span></span><code><span class="c">author = {{Company LLC}},</span>
 </code></pre></div>
 <h5 id="_4">著者の一部省略<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h5>
-<p>原則として著者は全てフルスペルで書き出す。ただし、特定の条件では、著者数が多い場合に、全ての著者を記述せずに後半の著者を省略しても良い場合がある。例えば<a href="https://www.ipsj.or.jp/journal/submit/ronbun_j_prms.html">情報処理学会の場合は、4名以上の場合に省略可能</a>としている。繰り返しになるが、原則として著者は全てフルスペルで書き出すこと。原稿のページ数に制限がある場合で、ページ制限内に収まらない場合に限って省略するようにすると良い。</p>
-<p>BibTeXでは次のように <code>others</code> を使うことで残りの著者を省略できる。</p>
+<p>原則として著者は全てフルスペルで書き出す。ただし、特定の条件では、著者数が多い場合に、全ての著者を記述せずに後半の著者を省略しても良い場合がある。例えば<a href="https://www.ipsj.or.jp/journal/submit/ronbun_j_prms.html">情報処理学会の場合は、4 名以上の場合に省略可能</a>としている。繰り返しになるが、原則として著者は全てフルスペルで書き出すこと。原稿のページ数に制限がある場合で、ページ制限内に収まらない場合に限って省略するようにすると良い。</p>
+<p>BibTeX では次のように <code>others</code> を使うことで残りの著者を省略できる。</p>
 <div class="language-text highlight"><pre><span></span><code>author = {Taro Tottori and Hanako Kuratyosi and Torimi Yonago and others},
 </code></pre></div>
+<h3 id="bibtex_1">BibTeX スタイル<a class="headerlink" href="#bibtex_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>IPSJ: <a href="https://www.ipsj.or.jp/journal/submit/style.html">LaTeX スタイルファイル、MS-Word テンプレートファイル-情報処理学会</a></li>
+<li>IEEE: <a href="https://www.ieee.org/conferences/publishing/templates.html">IEEE - Manuscript Templates for Conference Proceedings</a></li>
+<li>ACM: <a href="https://www.acm.org/publications/proceedings-template">ACM Primary Article Template</a></li>
+<li>LNCS: <a href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines">Conference Proceedings guidelines | Springer</a></li>
+</ul>
 <h3 id="_5">記述例<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
 <h4 id="_6">学術雑誌論文<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
 <ul>
-<li>DOIは積極的に記載する。</li>
-<li>DOIが無い場合、 <code>url</code> を記載することもできる。</li>
+<li>DOI は積極的に記載する。</li>
+<li>DOI が無い場合、 <code>url</code> を記載することもできる。</li>
 </ul>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">IPSJ</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">IPSJ</label><label for="__tabbed_1_2">LNCS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="language-bibtex highlight"><pre><span></span><code><span class="nc">@article</span><span class="p">{</span><span class="nl">Example</span><span class="p">,</span>
@@ -1450,18 +1477,32 @@
 <span class="p">}</span>
 </code></pre></div>
 </div>
+<div class="tabbed-block">
+<ul>
+<li><code>splncs04.bst</code></li>
+</ul>
+<div class="language-bibtex highlight"><pre><span></span><code><span class="nc">@article</span><span class="p">{</span><span class="nl">Example</span><span class="p">,</span>
+<span class="w">  </span><span class="na">author</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{Example, Example and Example, Example and E., E.}</span><span class="p">,</span>
+<span class="w">  </span><span class="na">title</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{Survey of Example}</span><span class="p">,</span>
+<span class="w">  </span><span class="na">journal</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{Example Surveys}</span><span class="p">,</span>
+<span class="w">  </span><span class="na">year</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="m">2024</span><span class="p">,</span>
+<span class="w">  </span><span class="na">volume</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="m">1</span><span class="p">,</span>
+<span class="w">  </span><span class="na">number</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="m">1</span><span class="p">,</span>
+<span class="w">  </span><span class="na">pages</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{1--10}</span><span class="p">,</span>
+<span class="w">  </span><span class="na">doi</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{prefix/suffix}</span><span class="p">,</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
 </div>
 </div>
 <h4 id="_7">国際会議論文<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h4>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">IPSJ</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block"></div>
-</div>
-</div>
 <ul>
-<li>DOIは積極的に記載する。</li>
-<li>
-<p>DOIが無い場合、 <code>url</code> を記載することもできる。</p>
+<li>DOI は積極的に記載する。</li>
+<li>DOI が無い場合、 <code>url</code> を記載することもできる。</li>
+</ul>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">IPSJ</label><label for="__tabbed_2_2">LNCS</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <div class="language-bibtex highlight"><pre><span></span><code><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">Example</span><span class="p">,</span>
 <span class="w">  </span><span class="na">author</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{Taro Chosya and Hanako Chosya}</span><span class="p">,</span>
 <span class="w">  </span><span class="na">title</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{Example Title}</span><span class="p">,</span>
@@ -1471,18 +1512,35 @@
 <span class="w">  </span><span class="na">doi</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{prefix/suffix}</span><span class="p">,</span>
 <span class="p">}</span>
 </code></pre></div>
-</li>
+</div>
+<div class="tabbed-block">
+<ul>
+<li><code>splncs04.bst</code></li>
 </ul>
+<div class="language-bibtex highlight"><pre><span></span><code><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">Example</span><span class="p">,</span>
+<span class="w">  </span><span class="na">author</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{Taro Chosya and Hanako Chosya}</span><span class="p">,</span>
+<span class="w">  </span><span class="na">title</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{Example Title}</span><span class="p">,</span>
+<span class="w">  </span><span class="na">year</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="m">2024</span><span class="p">,</span>
+<span class="w">  </span><span class="na">booktitle</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{In Proceedings of The 1st International Conference on Example}</span><span class="p">,</span>
+<span class="w">  </span><span class="na">pages</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{1--8}</span><span class="p">,</span>
+<span class="w">  </span><span class="na">doi</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{prefix/suffix}</span><span class="p">,</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+</div>
+</div>
 <h4 id="_8">ウェブページ<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h4>
 <ul>
 <li>ウェブページは内容が変更される場合があるので、参照した年月日を記載する。</li>
-<li>論文執筆時のウェブページの内容が失われないように、PDF形式やMHTML形式でハードコピーを保存しておく。</li>
+<li>論文執筆時のウェブページの内容が失われないように、PDF 形式や MHTML 形式でハードコピーを保存しておく。</li>
 </ul>
-<div class="tabbed-set tabbed-alternate" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">IPSJ</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">IPSJ</label><label for="__tabbed_3_2">LNCS</label></div>
 <div class="tabbed-content">
-<div class="tabbed-block"></div>
-</div>
-</div>
+<div class="tabbed-block">
+<ul>
+<li><code>@webpage</code> というエントリ種別が定義されている。</li>
+<li><code>refdate</code> フィールドの記述を忘れないように注意する。</li>
+</ul>
 <div class="language-bibtex highlight"><pre><span></span><code><span class="nc">@webpage</span><span class="p">{</span><span class="nl">Example</span><span class="p">,</span>
 <span class="w">  </span><span class="na">title</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{Example}</span><span class="p">,</span>
 <span class="w">  </span><span class="na">author</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{Taro Chosya and Hanako Chosya}</span><span class="p">,</span>
@@ -1491,16 +1549,36 @@
 <span class="w">  </span><span class="na">refdate</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{2024-04-01}</span><span class="p">,</span>
 <span class="p">}</span>
 </code></pre></div>
+</div>
+<div class="tabbed-block">
+<ul>
+<li><code>splncs04.bst</code><ul>
+<li>ウェブページ用のエントリ種別は定義されていないので <code>@misc</code> で代用する。</li>
+<li>アクセス年月日は <code>note</code> フィールドに記述すれば良さそう。</li>
+<li><code>url</code> パッケージを併用すると良さそう。</li>
+</ul>
+</li>
+</ul>
+<div class="language-bibtex highlight"><pre><span></span><code><span class="nc">@misc</span><span class="p">{</span><span class="nl">Example</span><span class="p">,</span>
+<span class="w">  </span><span class="na">title</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{Example}</span><span class="p">,</span>
+<span class="w">  </span><span class="na">author</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{Example}</span><span class="p">,</span>
+<span class="w">  </span><span class="na">howpublished</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{\url{https://example.com}}</span><span class="p">,</span>
+<span class="w">  </span><span class="na">note</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{last accessed 2024-11-11}</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+</div>
+</div>
 <h3 id="_9">フォーマッタの利用<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
 <p><code>.bib</code> ファイルを自動整形するには、<a href="https://github.com/FlamingTempura/bibtex-tidy">bibtex-tidy</a> が非常に便利である。</p>
 <ul>
-<li>CLIで使う場合: <a href="https://github.com/FlamingTempura/bibtex-tidy">https://github.com/FlamingTempura/bibtex-tidy</a> をインストールして使う。</li>
-<li>GUIで試す場合: <a href="https://flamingtempura.github.io/bibtex-tidy/index.html?opt=%7B%22modify%22%3Atrue%2C%22curly%22%3Atrue%2C%22numeric%22%3Atrue%2C%22months%22%3Afalse%2C%22space%22%3A2%2C%22tab%22%3Afalse%2C%22align%22%3A1%2C%22blankLines%22%3Atrue%2C%22duplicates%22%3A%5B%22key%22%2C%22doi%22%5D%2C%22stripEnclosingBraces%22%3Afalse%2C%22dropAllCaps%22%3Afalse%2C%22escape%22%3Afalse%2C%22sortFields%22%3A%5B%22title%22%2C%22shorttitle%22%2C%22author%22%2C%22year%22%2C%22month%22%2C%22day%22%2C%22journal%22%2C%22booktitle%22%2C%22location%22%2C%22on%22%2C%22publisher%22%2C%22address%22%2C%22series%22%2C%22volume%22%2C%22number%22%2C%22pages%22%2C%22doi%22%2C%22isbn%22%2C%22issn%22%2C%22url%22%2C%22urldate%22%2C%22copyright%22%2C%22category%22%2C%22note%22%2C%22metadata%22%5D%2C%22stripComments%22%3Afalse%2C%22trailingCommas%22%3Atrue%2C%22encodeUrls%22%3Afalse%2C%22tidyComments%22%3Atrue%2C%22removeEmptyFields%22%3Afalse%2C%22removeDuplicateFields%22%3Afalse%2C%22lowercase%22%3Atrue%2C%22backup%22%3Atrue%7D">こちらのリンク</a>から試せる。</li>
+<li>CLI で使う場合: <a href="https://github.com/FlamingTempura/bibtex-tidy">https://github.com/FlamingTempura/bibtex-tidy</a> をインストールして使う。</li>
+<li>GUI で試す場合: <a href="https://flamingtempura.github.io/bibtex-tidy/index.html?opt=%7B%22modify%22%3Atrue%2C%22curly%22%3Atrue%2C%22numeric%22%3Atrue%2C%22months%22%3Afalse%2C%22space%22%3A2%2C%22tab%22%3Afalse%2C%22align%22%3A1%2C%22blankLines%22%3Atrue%2C%22duplicates%22%3A%5B%22key%22%2C%22doi%22%5D%2C%22stripEnclosingBraces%22%3Afalse%2C%22dropAllCaps%22%3Afalse%2C%22escape%22%3Afalse%2C%22sortFields%22%3A%5B%22title%22%2C%22shorttitle%22%2C%22author%22%2C%22year%22%2C%22month%22%2C%22day%22%2C%22journal%22%2C%22booktitle%22%2C%22location%22%2C%22on%22%2C%22publisher%22%2C%22address%22%2C%22series%22%2C%22volume%22%2C%22number%22%2C%22pages%22%2C%22doi%22%2C%22isbn%22%2C%22issn%22%2C%22url%22%2C%22urldate%22%2C%22copyright%22%2C%22category%22%2C%22note%22%2C%22metadata%22%5D%2C%22stripComments%22%3Afalse%2C%22trailingCommas%22%3Atrue%2C%22encodeUrls%22%3Afalse%2C%22tidyComments%22%3Atrue%2C%22removeEmptyFields%22%3Afalse%2C%22removeDuplicateFields%22%3Afalse%2C%22lowercase%22%3Atrue%2C%22backup%22%3Atrue%7D">こちらのリンク</a>から試せる。</li>
 </ul>
-<p>CLIでの使用方法:</p>
-<div class="language-sh highlight"><pre><span></span><code>$<span class="w"> </span>npx<span class="w"> </span>bibtex-tidy<span class="w"> </span>--help
+<p>CLI での使用方法:</p>
+<div class="language-sh highlight"><pre><span></span><code>$<span class="w"> </span>bunx<span class="w"> </span>bibtex-tidy<span class="w"> </span>--help
 </code></pre></div>
-<div class="language-sh highlight"><pre><span></span><code>$<span class="w"> </span>npx<span class="w"> </span>bibtex-tidy<span class="w"> </span>--no-align<span class="w"> </span>--blank-lines<span class="w"> </span>--duplicates<span class="o">=</span>key,doi<span class="w"> </span>--no-escape<span class="w"> </span>--sort-fields<span class="w"> </span>--trailing-commas<span class="w"> </span>--no-remove-dupe-fields<span class="w"> </span>main.bib
+<div class="language-sh highlight"><pre><span></span><code>$<span class="w"> </span>bunx<span class="w"> </span>bibtex-tidy<span class="w"> </span>--no-align<span class="w"> </span>--blank-lines<span class="w"> </span>--duplicates<span class="o">=</span>key,doi<span class="w"> </span>--no-escape<span class="w"> </span>--sort-fields<span class="w"> </span>--trailing-commas<span class="w"> </span>--no-remove-dupe-fields<span class="w"> </span>*.bib
 </code></pre></div>
 
 
@@ -1524,7 +1602,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-custom">2024-09-23 09:52</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-custom">2024-11-12 15:30</span>
   </span>
 
     
@@ -1611,10 +1689,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.edit", "content.action.view", "content.code.copy", "content.code.annotate", "navigation.expand", "navigation.indexes", "navigation.tabs", "navigation.top"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.edit", "content.action.view", "content.code.copy", "content.code.annotate", "navigation.expand", "navigation.indexes", "navigation.tabs", "navigation.top"], "search": "../../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.525ec568.min.js"></script>
+      <script src="../../assets/javascripts/bundle.56dfad97.min.js"></script>
       
         <script src="../../javascripts/mathjax.js"></script>
       
